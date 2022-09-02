@@ -1,7 +1,8 @@
 server:
   port: 8080
+  shutdown: graceful
   max-http-header-size: 1MB
 
 spring:
   lifecycle:
-    timeout-per-shutdown-phase: 10s
+    timeout-per-shutdown-phase: 3s

@@ -7,9 +7,9 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 @EnableAsync
 @Configuration(proxyBeanMethods = false)
-public class MyThreadPoolExecutor {
+public class AsyncConfig {
 
-    public static final String MY_EXECUTOR = "MY_EXECUTOR";
+    public static final String MY_EXECUTOR = "myExecutor";
 
     @Bean(MY_EXECUTOR)
     public ThreadPoolTaskExecutor myExecutor() {
